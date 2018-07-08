@@ -11,7 +11,7 @@
             <mu-list-item title='重置密码'></mu-list-item>
         </router-link>
         </mu-list>
-        <div id='view'>
+        <div id='views'>
           <router-view>
           </router-view>
         </div>
@@ -22,7 +22,7 @@
 </template>
 <style lang="css">
 
-#view{
+#views{
     width:75%;
     height: 100%;
     float: right;

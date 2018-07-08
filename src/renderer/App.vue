@@ -5,7 +5,7 @@
         disable slot='left'>QUANTAXIS</mu-flat-button>
       <mu-raised-button slot='right' label='User' ref='button' @click='toggle'/>
       <mu-popover :trigger='trigger' :open='open' @close='handleClose'>
-          <mu-menu>
+          <mu-menu >
             <router-link to='/personal/index'>
               <mu-list-item title='用户中心' />
             </router-link>
