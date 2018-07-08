@@ -1,0 +1,62 @@
+import Vue from 'vue'
+import Router from 'vue-router'
+Vue.use(Router)
+
+export default new Router({
+  routes: [{
+    path: '/',
+    name: 'homePage',
+    component: require('@/components/HomePage').default
+  },
+  {
+    path: '/sign',
+    name: 'signPage',
+    component: require('@/components/Sign').default
+  },
+  {
+    path: '/personal',
+    name: 'personal',
+    meta: {
+      requireAuth: true // 添加该字段，表示进入这个路由是需要登录的
+    },
+    component: require('@/components/personal').default,
+    children: [{
+      'path': '/personal/index',
+      component: require('@/components/personal/index').default
+    },
+    {
+      'path': '/personal/setting',
+      component: require('@/components/personal/setting').default
+    },
+    {
+      'path': '/personal/account',
+      component: require('@/components/personal/account').default,
+      children: [{
+        'path': '/personal/account/bind',
+        component: require('@/components/personal/account/bind_account').default
+      },
+      {
+        'path': '/personal/account/reset_password',
+        component: require('@/components/personal/account/reset_password').default
+      }]
+    },
+    {
+      'path': '/personal/block',
+      component: require('@/components/personal/block').default,
+      children: [{
+        'path': '/personal/block/settings',
+        component: require('@/components/personal/block/settings').default
+      },
+      {
+        'path': '/personal/block/sasas',
+        component: require('@/components/personal/block/sasas').default
+      },
+      {
+        'path': '/personal/block/messages',
+        component: require('@/components/personal/block/messages').default
+      }]
+    }
+    ]
+  }
+  ]
+})
