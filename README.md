@@ -1,7 +1,6 @@
 # quantaxisdesktop
 
 > quantaxis desktop
-
 #### Build Setup
 
 ``` bash
@@ -14,12 +13,30 @@ npm run dev
 # build electron application for production
 npm run build
 
-
-# lint all JS/Vue component files in `src/`
-npm run lint
+# build web 
+npm run build:web
 
 ```
 
 ---
 
-This project was generated with [electron-vue](https://github.com/SimulatedGREG/electron-vue)@[7c4e3e9](https://github.com/SimulatedGREG/electron-vue/tree/7c4e3e90a772bd4c27d2dd4790f61f09bae0fcef) using [vue-cli](https://github.com/vuejs/vue-cli). Documentation about the original structure can be found [here](https://simulatedgreg.gitbooks.io/electron-vue/content/index.html).
+打包前强烈推荐先安装阿里的淘宝npm
+```
+npm install cnpm -g
+```
+
+使用cnpm 全局安装electron 速度非常快
+```
+cnpm install electron -g
+
+```
+
+再使用cnpm安装依赖项
+
+```
+cnpm install 
+```
+
+安装示意截图
+
+![](http://pic.yutiansut.com/electron.png)
