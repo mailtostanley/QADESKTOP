@@ -22,7 +22,15 @@ export default new Router({
     component: require('@/components/personal').default,
     children: [{
       'path': '/personal/index',
-      component: require('@/components/personal/index').default
+      component: require('@/components/personal/index').default,
+      children: [{
+        'path': '/personal/index/chart',
+        component: require('@/components/personal/index/chart_view').default,
+        children: [{
+          'path': '/personal/index/chart/default',
+          component: require('@/components/personal/index/chart_view/chart').default
+        }]
+      }]
     },
     {
       'path': '/personal/setting',
