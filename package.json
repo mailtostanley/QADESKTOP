@@ -1,8 +1,8 @@
 {
-  "name": "quantaxismonitor",
-  "version": "0.0.0",
+  "name": "quantaxis",
+  "version": "0.0.1",
   "author": "yutiansut <yutiansut@qq.com>",
-  "description": "quantaxis desktop",
+  "description": "quantaxis",
   "license": "MIT",
   "main": "./dist/electron/main.js",
   "scripts": {
@@ -19,8 +19,8 @@
     "postinstall": "npm run lint:fix"
   },
   "build": {
-    "productName": "quantaxismonitor",
-    "appId": "org.simulatedgreg.electron-vue",
+    "productName": "quantaxis",
+    "appId": "org.yutiansut.quantaxis",
     "directories": {
       "output": "build"
     },
@@ -79,7 +79,7 @@
     "css-loader": "^0.28.4",
     "del": "^3.0.0",
     "devtron": "^1.4.0",
-    "electron": "^1.7.5",
+    "electron": "^1.8.8",
     "electron-builder": "^19.19.1",
     "electron-debug": "^1.4.0",
     "electron-devtools-installer": "^2.2.0",
