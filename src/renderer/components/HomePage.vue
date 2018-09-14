@@ -1,7 +1,7 @@
 <template>
     <div id='title'>
-        <h1>#QUANTAXIS</h1>
-        <h2>Intergrated Quantitative System | WebKit Visualization Soulution</h2>
+        <h1 align="center">QUANTAXIS</h1>
+        <h2 align="center">Quantitative Financial FrameWork</h2>
     </div>
 </template>
 <script>
@@ -11,25 +11,32 @@ export default {
 }
 </script>
 <style>
+body, html {
+ background-color: rgb(52, 52, 53);
+}
+
+
 #title {
     position: relative;
-    width: 60%;
-    height: 100%;
-    float: left;
+    width: 100%;
+    height:50%;
+    margin-top: 20%;
     display: inline-block;
 
-    margin: 18% 8% 18% 12%;
 }
 
 #title h1 {
-    color: darkgrey;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    font-family: Calibri;
     font-size: 60px;
+    position: relative;
+    font-weight: normal;
 }
 
 #title h2 {
-    color: darkgrey;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    color:  rgb(255, 255, 255);
+    font-family: Calibri Light;
+    font-weight: lighter;
+    font-size: 15px;
 }
 </style>
