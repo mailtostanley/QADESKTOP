@@ -1,20 +1,23 @@
 <template>
-    <div id='title'>
+    <div id='title' @keyup='submit($event)'>
         <h1 align="center">QUANTAXIS</h1>
         <h2 align="center">Quantitative Financial FrameWork</h2>
     </div>
 </template>
 <script>
-
 export default {
-  name: 'home'
+  name: 'home',
+  methods: {
+    submit (e) {
+      console.log(e)
+    }
+  }
 }
 </script>
 <style>
 body, html {
- background-color: rgb(52, 52, 53);
+ background-color: rgb(52, 52, 52);
 }
-
 
 #title {
     position: relative;
@@ -27,7 +30,7 @@ body, html {
 
 #title h1 {
     color: rgb(255, 255, 255);
-    font-family: Calibri;
+    font-family:Calibri ;
     font-size: 60px;
     position: relative;
     font-weight: normal;
@@ -35,7 +38,7 @@ body, html {
 
 #title h2 {
     color:  rgb(255, 255, 255);
-    font-family: Calibri Light;
+    font-family: Operator Mono Light;
     font-weight: lighter;
     font-size: 15px;
 }
