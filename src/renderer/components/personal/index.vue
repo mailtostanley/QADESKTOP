@@ -1,21 +1,20 @@
 <template>
   <div >
       <h1>>hi! {{user}}</h1>
-      <mu-list class='inside_list' style='float:left'>
-           
-
-
-        <router-link to='/personal/index/chart'>
-            <mu-list-item title='行情中心'></mu-list-item>
-        </router-link>
-        <router-link to='/personal/account/bind'>
-            <mu-list-item title='绑定账户'></mu-list-item>
-        </router-link>
+      <div class='inside_list'>
+        <mu-list  style='float:left'>
+          <router-link to='/personal/index/chart'>
+              <mu-list-item title='行情中心'></mu-list-item>
+          </router-link>
+          <router-link to='/personal/account/bind'>
+              <mu-list-item title='绑定账户'></mu-list-item>
+          </router-link>
         </mu-list>
-        <div id='views' style='float:right'>
-          <router-view>
-          </router-view>
-        </div>
+      </div>
+      <div id='views' style='float:right'>
+        <router-view>
+        </router-view>
+      </div>
       
   </div>
 
@@ -92,7 +91,7 @@ body{
 
 
 #views{
-    width:1450px;
+    width:1400px;
     height: 1000px;
 
     position: relative;

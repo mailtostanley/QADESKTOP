@@ -18,7 +18,7 @@
 <style lang="css">
 
 #views{
-    width:1450px;
+    width:1400px;
     height: 1000px;
     float: left;
 }
