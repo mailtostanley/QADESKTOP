@@ -15,12 +15,9 @@
           <mu-appbar  title="QUANTAXIS">
 
           </mu-appbar>
-            <mu-text-field hintText="提示文字" :underlineShow="false"/><br/>
+
             <mu-menu >
-              <router-link to='/personal/index'>
-                <mu-list-item class='menu_list' title='用户中心' />
-              </router-link>
-              <router-link to='/personal/setting'>
+
               <router-link to='/personal/index'>
                 <mu-list-item class='menu_list'  title='个人中心'></mu-list-item>
               </router-link>
@@ -150,9 +147,6 @@ body, html {
   color: white;
 }
 
-.mu-text-field,.mu-text-field-content{
-  background-color: rgb(255, 255, 255)
-}
 
 
 </style>
