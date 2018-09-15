@@ -4,7 +4,7 @@
       <h1>#USER</h1>
       <h2>Welcome to QUANTAXIS</h2>
     </div>
-    <div id='textbox'>
+    <div id='textbox' @keydown.13="login">
 
 
       <mu-text-field label='账户' hintText='请输入用户名' v-model='valuex'  labelFloat/>
@@ -35,7 +35,7 @@
   float: left;
   display: inline-block;
   margin: 18% 8% 18% 12%;
-  color: darkgrey;
+  color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.8em;
 }
@@ -66,12 +66,11 @@ export default {
   data () {
     return {
       value: '1',
-      valuex: 'username',
+      valuex: 'admin',
       topPopup: false
     }
   },
   methods: {
-
     handleChange (value) {
       this.value = value
     },

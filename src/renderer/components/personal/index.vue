@@ -1,19 +1,18 @@
 <template>
   <div id='table_view'>
     <div id="menu_view">
-    <mu-paper :z-depth="1" class="demo-list-wrap">
 
-      <mu-list>
-        <mu-list-item button :ripple="false">
-          <mu-list-item-title>SET</mu-list-item-title>
-        </mu-list-item>
-        <mu-list-item button :ripple="false">
+      <mu-list class='inside_list'>
+           
+        <router-link to='/personal/index/chart'>
+            <mu-list-item class='index_name' title='行情中心'></mu-list-item>
+        </router-link>
 
-          <mu-list-item-title>Stared</mu-list-item-title>
-        </mu-list-item>
+        <router-link to='/personal/account/reset_password'>
+            <mu-list-item class='index_name' title='交易'></mu-list-item>
+        </router-link>
+        </mu-list>
 
-      </mu-list>
-    </mu-paper>
   </div>
   <div id="list_view">
       <router-view></router-view>
@@ -25,28 +24,49 @@
 </template>
 
 <style>
+body{
+  background-color: rgb(52, 52, 52);
+  color: white;
+}
+.mu-list-item{
+  background-color: rgb(52, 52, 52);
+  text-align: center;
+  align:center;
+}
+.mu-item{
+  background-color: rgb(52, 52, 52);
+}
+.mu-item-title{
+  background-color: rgb(52, 52, 52);
+  color: white;
+}
+
 .demo-list-wrap {
   width: 100%;
   height: 100%;
 }
-
 #view {
   width: 100%;
   height: 100%;
   float: right;
 }
 
+#table_view {
+  width: 100%;
+  height: 100%;
+}
 #menu_view {
-  width: 5%;
+  width: 20%;
   height: 100%;
 }
 #list_view {
   width: 15%;
   height: 100%;
 }
-
 #charts_view {
   width: 80%;
   height: 100%;
 }
+
+
 </style>
