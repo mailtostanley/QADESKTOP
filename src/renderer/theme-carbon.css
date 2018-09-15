@@ -39,7 +39,7 @@ a {
   color: rgba(255, 255, 255, 0.7);
 }
 .mu-bottom-item-active .mu-bottom-item-text {
-  color: rgb(25,25,25);
+  color: rgb(255, 255, 255);
 }
 .mu-bottom-nav-shift .mu-bottom-item-active .mu-bottom-item-text {
   color: #ffffff;
@@ -78,7 +78,7 @@ a {
   color: rgba(71, 74, 79, 0.54);
 }
 .mu-card-text {
-  color: rgb(25,25,25);
+  color: rgb(255, 255, 255);
 }
 .mu-checkbox input[type="checkbox"]:checked + .mu-checkbox-wrapper .mu-checkbox-icon-uncheck {
   color: #ff5252;
@@ -87,7 +87,7 @@ a {
   color: #ff5252;
 }
 .mu-checkbox-label {
-  color: rgb(25,25,25);
+  color: rgb(255, 255, 255);
 }
 .mu-checkbox.disabled .mu-checkbox-label {
   color: #d3d6db;
@@ -137,7 +137,7 @@ a {
 .mu-day-button-text {
   font-weight: 400;
   position: relative;
-  color: rgb(25,25,25);
+  color: rgb(255, 255, 255);
 }
 .mu-day-button.now .mu-day-button-text {
   color: #ff5252;
@@ -163,7 +163,7 @@ a {
   border-bottom-color: #edeff2;
 }
 .mu-dialog-title {
-  color: rgb(25,25,25);
+  color: rgb(255, 255, 255);
 }
 .mu-dialog-body {
   color: rgba(71, 74, 79, 0.6);
@@ -178,7 +178,7 @@ a {
   background-color: #edeff2;
 }
 .mu-flat-button {
-  color: rgb(25,25,25);
+  color: rgb(255, 255, 255);
   background-color: transparent;
 }
 .mu-flat-button .mu-circle-ripple {
@@ -235,10 +235,10 @@ a {
   background-color: rgba(71, 74, 79, 0.1);
 }
 .mu-item {
-  color: rgb(25,25,25);
+  color: rgb(255, 255, 255);
 }
 .mu-item.selected {
-  color: rgb(25,25,25);
+  color: rgb(255, 255, 255);
 }
 .mu-item-link-icon {
   color: #757575;
@@ -256,16 +256,16 @@ a {
   color: #7e848c;
 }
 .mu-menu-item-wrapper {
-  color: rgb(25,25,25);
+  color: rgb(255, 255, 255);
 }
 .mu-menu-item-wrapper.active {
   color: #ff5252;
 }
 .mu-menu-item-wrapper.hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .mu-menu-item-wrapper.disabled {
-  color: #d3d6db;
+  color: #ffffff;
 }
 .mu-menu-item-left-icon {
   color: #757575;
@@ -308,6 +308,7 @@ a {
 }
 .mu-popover {
   background-color: #ffffff;
+  color: white;
 }
 .mu-popup {
   background-color: #ffffff;
@@ -520,8 +521,9 @@ a {
 .mu-text-field-focus-line.error {
   background-color: #f44336;
 }
+
 .mu-text-field-hint {
-  color: #d3d6db;
+  color: white;
 }
 .mu-text-field.has-label .mu-text-field-label.float {
   color: #d3d6db;
