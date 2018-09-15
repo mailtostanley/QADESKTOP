@@ -1,6 +1,6 @@
 <template>
   <div>
 
-      passss
+      尚未完善
   </div>
 </template>

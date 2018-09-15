@@ -21,15 +21,15 @@
               <router-link to='/personal/index'>
                 <mu-list-item class='menu_list'  title='个人中心'></mu-list-item>
               </router-link>
-              <router-link to='/personal/block'>
+              <!-- <router-link to='/personal/block'>
                 <mu-list-item class='menu_list'  title='版块监控'></mu-list-item>
               </router-link>
-
+ -->
 
               <router-link to='/personal/account'>
                 <mu-list-item class='menu_list'  title='账户管理'></mu-list-item>
               </router-link>
-              <mu-list-item class='menu_list'  title='设置中心' /></router-link>
+
               <mu-divider />
               <mu-list-item class='menu_list'  title='Sign out' @click='signout' />
 
