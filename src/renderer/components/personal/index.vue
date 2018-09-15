@@ -68,5 +68,13 @@ body{
   height: 100%;
 }
 
+.index_name{
+  width: 20%;
+}
+
+.mu-item-wrapper{
+  width:100%;
+}
+  
 
 </style>

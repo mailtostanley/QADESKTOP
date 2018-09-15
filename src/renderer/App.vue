@@ -10,37 +10,42 @@
       </mu-appbar>
 
 
-              
-      <mu-drawer :open='open' :docked=false @close="toggle()" :right="position === 'right'">
-          <mu-menu >
-            <router-link to='/personal/index'>
-              <mu-list-item class='menu_list' title='用户中心' />
-            </router-link>
-            <router-link to='/personal/setting'>
-            <router-link to='/personal/index'>
-              <mu-list-item class='menu_list'  title='个人中心'></mu-list-item>
-            </router-link>
-            <router-link to='/personal/block'>
-              <mu-list-item class='menu_list'  title='版块监控'></mu-list-item>
-            </router-link>
+      <mu-paper>
+        <mu-drawer :open='open' :docked=false @close="toggle()" :right="position === 'right'">
+          <mu-appbar  title="QUANTAXIS">
+
+          </mu-appbar>
+            <mu-text-field hintText="提示文字" :underlineShow="false"/><br/>
+            <mu-menu >
+              <router-link to='/personal/index'>
+                <mu-list-item class='menu_list' title='用户中心' />
+              </router-link>
+              <router-link to='/personal/setting'>
+              <router-link to='/personal/index'>
+                <mu-list-item class='menu_list'  title='个人中心'></mu-list-item>
+              </router-link>
+              <router-link to='/personal/block'>
+                <mu-list-item class='menu_list'  title='版块监控'></mu-list-item>
+              </router-link>
 
 
-            <router-link to='/personal/account'>
-              <mu-list-item class='menu_list'  title='账户管理'></mu-list-item>
-            </router-link>
-            <mu-list-item class='menu_list'  title='Settings' /></router-link>
-            <mu-divider />
-            <mu-list-item class='menu_list'  title='Sign out' @click='signout' />
+              <router-link to='/personal/account'>
+                <mu-list-item class='menu_list'  title='账户管理'></mu-list-item>
+              </router-link>
+              <mu-list-item class='menu_list'  title='设置中心' /></router-link>
+              <mu-divider />
+              <mu-list-item class='menu_list'  title='Sign out' @click='signout' />
 
 
-            <mu-list-item  class='menu_list'  @click="open = false" button>
-              
-            </mu-list-item>
-          </mu-menu>
-      </mu-drawer>
-        
-      <router-view></router-view>
-
+              <mu-list-item  class='menu_list'  @click="open = false" button>
+                
+              </mu-list-item>
+            </mu-menu>
+        </mu-drawer>
+      </mu-paper>
+      <mu-content-block>
+        <router-view></router-view>
+      </mu-content-block>
     </div>
   </div>
 </template>
@@ -134,16 +139,20 @@ body, html {
 .mu-menu{
   height: 100%;
   background-color: rgb(52,52,52);
+  
 }
 .mu-appbar{
   background-color: rgb(26,26,26);
   color: white;
 }
-.mu-raised-button,.mu-menu ,.mu-menu-list,.mu-item, .mu-item-title, menu_list{
+.mu-raised-button,.mu-menu ,.mu-menu-list,.mu-item, .mu-item-title, menu_list,left{
   background-color: rgb(52,52,52);
   color: white;
 }
 
+.mu-text-field,.mu-text-field-content{
+  background-color: rgb(255, 255, 255)
+}
 
 
 </style>
