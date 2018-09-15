@@ -9,23 +9,23 @@
 <style lang="css">
   #personal {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 1600px;
+    height: 1000px;
     display: block;
   }
 
   .welcome {
-    margin-top: 2%;
-    margin-right: 3%;
-    width: 18%;
-    height: 100%;
+    margin-top: 20px;
+    margin-right: 30px;
+    width: 180px;
+    height: 1000px;
     display: inline-block;
   }
 
   #view {
-    margin-top: 2%;
-    width: 100%;
-    height: 100%;
+    margin-top: 20px;
+    width: 1600px;
+    height: 1000px;
     display: inline-block;
   }
 

@@ -26,17 +26,22 @@
 <style lang="css">
 
 #views{
-    width:75%;
-    height: 100%;
+    width:750px;
+    height: 1000px;
+    display: inline-block;
     float: right;
+    
 }
 .mu-item-content {
     font-size: 18px;
     text-align: middle;
+    display: inline;
   }
 .inside_list{
-   width: 20%;
-   height: 100%;
+   width: 200px;
+   height: 1000px;
    float: left;
+   display: inline-block;
+   
 }
 </style>

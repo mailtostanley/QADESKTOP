@@ -1,7 +1,7 @@
 <template>
   <div >
       <h1>>hi! {{user}}</h1>
-      <mu-list class='inside_list'>
+      <mu-list class='inside_list' style='float:left'>
            
 
 
@@ -12,7 +12,7 @@
             <mu-list-item title='绑定账户'></mu-list-item>
         </router-link>
         </mu-list>
-        <div id='views'>
+        <div id='views' style='float:right'>
           <router-view>
           </router-view>
         </div>
@@ -53,35 +53,30 @@ body{
 }
 
 .demo-list-wrap {
-  width: 100%;
-  height: 100%;
-}
-#view {
-  width: 100%;
-  height: 100%;
-  float: right;
+  width: 1000px;
+  height: 1000px;
 }
 
 #table_view {
-  width: 100%;
-  height: 100%;
+  width: 1000px;
+  height: 1000px;
 }
 #menu_view {
-  width: 20%;
-  height: 100%;
+  width: 200px;
+  height: 1000px;
 }
 #list_view {
-  width: 15%;
-  height: 100%;
+  width: 150px;
+  height: 1000px;
 }
 #charts_view {
-  width: 80%;
-  height: 100%;
+  width: 800px;
+  height: 1000px;
 }
 
 .inside_list{
-   width: 20%;
-   height: 100%;
+   width: 200px;
+   height: 1000px;
    float: left;
 }
 
@@ -89,18 +84,29 @@ body{
   width:100%;
 }
   
+#view {
+  width: 1600px;
+  height: 1000px;
+  float: right;
+}
+
+
 #views{
-    width:80%;
-    height: 100%;
-    float: right;
+    width:1450px;
+    height: 1000px;
+
+    position: relative;
+    display: inline-block;
 }
 .mu-item-content {
     font-size: 18px;
     text-align: middle;
   }
 .inside_list{
-   width: 15%;
-   height: 100%;
+   width: 150px;
+   height: 1000px;
    float: left;
+   display: block;
+   display: inline-block;
 }
 </style>

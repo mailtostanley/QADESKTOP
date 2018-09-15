@@ -1,5 +1,5 @@
 .mu-appbar {
-  background-color: #474a4f;
+  background-color: rgb(25,25,25);
   color: #ffffff;
 }
 .mu-avatar {
@@ -19,8 +19,8 @@
   color: #ffffff;
 }
 body {
-  background-color: #ffffff;
-  color: #474a4f;
+  background-color: rgb(52,52,52);
+  color: white;
   font-family: Roboto, Lato, sans-serif;
 }
 a {
@@ -30,7 +30,7 @@ a {
   background-color: #ffffff;
 }
 .mu-bottom-nav-shift {
-  background-color: #474a4f;
+  background-color: rgb(25,25,25);
 }
 .mu-buttom-item {
   color: #7e848c;
@@ -39,13 +39,13 @@ a {
   color: rgba(255, 255, 255, 0.7);
 }
 .mu-bottom-item-active .mu-bottom-item-text {
-  color: #474a4f;
+  color: rgb(25,25,25);
 }
 .mu-bottom-nav-shift .mu-bottom-item-active .mu-bottom-item-text {
   color: #ffffff;
 }
 .mu-bottom-item-active .mu-bottom-item-icon {
-  color: #474a4f;
+  color: rgb(25,25,25);
 }
 .mu-bottom-nav-shift .mu-bottom-item-active .mu-bottom-item-icon {
   color: #ffffff;
@@ -78,7 +78,7 @@ a {
   color: rgba(71, 74, 79, 0.54);
 }
 .mu-card-text {
-  color: #474a4f;
+  color: rgb(25,25,25);
 }
 .mu-checkbox input[type="checkbox"]:checked + .mu-checkbox-wrapper .mu-checkbox-icon-uncheck {
   color: #ff5252;
@@ -87,7 +87,7 @@ a {
   color: #ff5252;
 }
 .mu-checkbox-label {
-  color: #474a4f;
+  color: rgb(25,25,25);
 }
 .mu-checkbox.disabled .mu-checkbox-label {
   color: #d3d6db;
@@ -119,16 +119,16 @@ a {
   color: rgba(71, 74, 79, 0.26);
 }
 .mu-circular-progress-determinate-path {
-  stroke: #474a4f;
+  stroke: rgb(25,25,25);
 }
 .mu-calendar {
-  color: #474a4f;
+  color: rgb(25,25,25);
 }
 .mu-calendar-year {
   background-color: #ffffff;
 }
 .mu-date-display {
-  background-color: #474a4f;
+  background-color: rgb(25,25,25);
   color: #ffffff;
 }
 .mu-day-button-bg {
@@ -137,7 +137,7 @@ a {
 .mu-day-button-text {
   font-weight: 400;
   position: relative;
-  color: #474a4f;
+  color: rgb(25,25,25);
 }
 .mu-day-button.now .mu-day-button-text {
   color: #ff5252;
@@ -147,7 +147,7 @@ a {
   color: #ffffff;
 }
 .mu-year-button-text {
-  color: #474a4f;
+  color: rgb(25,25,25);
 }
 .mu-year-button.selected .mu-year-button-text {
   color: #ff5252;
@@ -163,13 +163,13 @@ a {
   border-bottom-color: #edeff2;
 }
 .mu-dialog-title {
-  color: #474a4f;
+  color: rgb(25,25,25);
 }
 .mu-dialog-body {
   color: rgba(71, 74, 79, 0.6);
 }
 .mu-dropDown-menu-text {
-  color: #474a4f;
+  color: rgb(25,25,25);
 }
 .mu-dropDown-menu-icon {
   color: #edeff2;
@@ -178,11 +178,11 @@ a {
   background-color: #edeff2;
 }
 .mu-flat-button {
-  color: #474a4f;
+  color: rgb(25,25,25);
   background-color: transparent;
 }
 .mu-flat-button .mu-circle-ripple {
-  color: #474a4f;
+  color: rgb(25,25,25);
 }
 .mu-flat-button-primary {
   color: #ff5252;
@@ -191,7 +191,7 @@ a {
   color: #ff5252;
 }
 .mu-float-button {
-  background-color: #474a4f;
+  background-color: rgb(25,25,25);
   color: #ffffff;
 }
 .mu-float-button.disabled {
@@ -235,10 +235,10 @@ a {
   background-color: rgba(71, 74, 79, 0.1);
 }
 .mu-item {
-  color: #474a4f;
+  color: rgb(25,25,25);
 }
 .mu-item.selected {
-  color: #474a4f;
+  color: rgb(25,25,25);
 }
 .mu-item-link-icon {
   color: #757575;
@@ -256,7 +256,7 @@ a {
   color: #7e848c;
 }
 .mu-menu-item-wrapper {
-  color: #474a4f;
+  color: rgb(25,25,25);
 }
 .mu-menu-item-wrapper.active {
   color: #ff5252;
@@ -274,21 +274,21 @@ a {
   color: #757575;
 }
 .mu-pagination-item {
-  color: #474a4f;
+  color: rgb(25,25,25);
 }
 .mu-pagination-item.hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 .mu-pagination-item.active {
   color: #ffffff;
-  background-color: #474a4f;
+  background-color: rgb(25,25,25);
 }
 .mu-pagination-item.disabled {
   color: #d3d6db;
 }
 .mu-paper {
   background-color: #ffffff;
-  color: #474a4f;
+  color: rgb(25,25,25);
 }
 .mu-picker {
   background-color: #ffffff;
@@ -298,13 +298,13 @@ a {
   background-color: #edeff2;
 }
 .mu-picker-slot.mu-picker-slot-divider {
-  color: #474a4f;
+  color: rgb(25,25,25);
 }
 .mu-picker-item {
   color: #7e848c;
 }
 .mu-picker-item.selected {
-  color: #474a4f;
+  color: rgb(25,25,25);
 }
 .mu-popover {
   background-color: #ffffff;
@@ -319,7 +319,7 @@ a {
   color: #ff5252;
 }
 .mu-radio-label {
-  color: #474a4f;
+  color: rgb(25,25,25);
 }
 .mu-radio.disabled .mu-radio-label {
   color: #d3d6db;
@@ -337,8 +337,8 @@ a {
   color: #d3d6db;
 }
 .mu-raised-button {
-  background-color: #ffffff;
-  color: #474a4f;
+  background-color: rgb(25,25,25);
+  color: white;
 }
 .mu-raised-button.hover .mu-raised-button-wrapper {
   background-color: rgba(71, 74, 79, 0.1);
@@ -392,7 +392,7 @@ a {
   border-left: 1px solid #bdbdbd;
 }
 .mu-step-label {
-  color: #474a4f;
+  color: rgb(25,25,25);
 }
 .mu-step-label.disabled {
   color: #d3d6db;
@@ -435,7 +435,7 @@ a {
   background-color: #e0e0e0;
 }
 .mu-switch-label {
-  color: #474a4f;
+  color: rgb(25,25,25);
 }
 .mu-switch.disabled .mu-switch-label {
   color: #d3d6db;
@@ -447,7 +447,7 @@ a {
   background-color: #bbbfc4;
 }
 .mu-switch-thumb {
-  color: #474a4f;
+  color: rgb(25,25,25);
   background-color: #f5f5f5;
 }
 .mu-switch.disabled .mu-switch-thumb {
@@ -464,7 +464,7 @@ a {
 }
 .mu-tr {
   border-bottom-color: #edeff2;
-  color: #474a4f;
+  color: rgb(25,25,25);
 }
 .mu-tr.selected {
   background-color: #f5f5f5;
@@ -479,7 +479,7 @@ a {
   border-top-color: #edeff2;
 }
 .mu-tabs {
-  background-color: #474a4f;
+  background-color: rgb(25,25,25);
 }
 .mu-tab-link-highlight {
   background-color: #ff5252;
@@ -503,7 +503,7 @@ a {
   color: #d3d6db;
 }
 .mu-text-field-input {
-  color: #474a4f;
+  color: white;
 }
 .mu-text-field.error .mu-text-field-help {
   color: #f44336;
@@ -530,7 +530,7 @@ a {
   background-color: rgba(0, 0, 0, 0.07);
 }
 .mu-time-display {
-  background-color: #474a4f;
+  background-color: rgb(25,25,25);
   color: #ffffff;
 }
 .mu-clock-number.selected {

@@ -18,8 +18,8 @@
 <style lang="css">
 
 #views{
-    width:75%;
-    height: 100%;
+    width:1450px;
+    height: 1000px;
     float: left;
 }
 .mu-item-content {
@@ -27,14 +27,15 @@
     text-align: middle;
   }
 .inside_list{
-   width: 15%;
-   height: 100%;
+   width: 150px;
+   height: 1000px;
    float: left;
-   display: inline;
+
 }
   #view {
-    margin-top: 2%;
-    width: 100%;
+
+    margin-top: 20px;
+    width: 1600px;
     float: left;
 }
 
