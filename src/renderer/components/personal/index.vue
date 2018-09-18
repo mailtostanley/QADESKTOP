@@ -84,14 +84,14 @@ body{
 }
   
 #view {
-  width: 1600px;
+  width: 1300px;
   height: 1000px;
-  float: right;
+  float: left;
 }
 
 
 #views{
-    width:1400px;
+    width:1100px;
     height: 1000px;
 
     position: relative;
@@ -104,7 +104,6 @@ body{
 .inside_list{
    width: 150px;
    height: 1000px;
-   float: left;
    display: block;
    display: inline-block;
 }

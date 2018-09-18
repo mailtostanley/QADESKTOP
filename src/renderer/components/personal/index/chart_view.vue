@@ -143,7 +143,7 @@ export default {
   left: 0;
   margin-left: 0px;
   margin-bottom: 0px;
-  width: 1450px;
+  width: 1050px;
   height: 600px;
   border-radius: 10px;
 }

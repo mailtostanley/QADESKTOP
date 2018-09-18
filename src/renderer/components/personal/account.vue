@@ -29,7 +29,7 @@
 <style lang="css">
 
 #views{
-    width:750px;
+    width:1100px;
     height: 1000px;
     display: inline-block;
     float: right;

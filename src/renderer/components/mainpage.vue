@@ -24,7 +24,7 @@
 
   #view {
     margin-top: 20px;
-    width: 1600px;
+    width: 1300px;
     height: 1000px;
     display: inline-block;
   }
