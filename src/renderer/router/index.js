@@ -77,22 +77,21 @@ export default new Router({
         'path': '/personal/backtest',
         component: require('@/components/personal/backtest').default,
         children: [{
-          'path': '/personal/backtest/history',
+          'path': '/personal/backtest/history/:id',
           component: require('@/components/personal/backtest/history').default
         },
         {
-          'path': '/personal/backtest/assets',
+          'path': '/personal/backtest/assets/:id',
           component: require('@/components/personal/backtest/assets').default
         },
         {
-          'path': '/personal/backtest/analysis',
+          'path': '/personal/backtest/analysis/:id',
           component: require('@/components/personal/backtest/analysis').default
         },
         {
-          'path': '/personal/backtest/strategy',
+          'path': '/personal/backtest/strategy/:id',
           component: require('@/components/personal/backtest/strategy').default
-        }
-      ]
+        }]
       }
     ]
   }

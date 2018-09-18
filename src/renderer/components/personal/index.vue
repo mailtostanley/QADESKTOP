@@ -6,9 +6,13 @@
           <router-link to='/personal/index/chart'>
               <mu-list-item title='行情中心'></mu-list-item>
           </router-link>
+          <router-link to='/personal/backtest'>
+              <mu-list-item title='回测概览'></mu-list-item>
+          </router-link>
           <router-link to='/personal/account/bind'>
               <mu-list-item title='绑定账户'></mu-list-item>
           </router-link>
+
         </mu-list>
       </div>
       <div id='views' style='float:right'>
