@@ -72,6 +72,27 @@ export default new Router({
           'path': '/personal/block/messages',
           component: require('@/components/personal/block/messages').default
         }]
+      },
+      {
+        'path': '/personal/backtest',
+        component: require('@/components/personal/backtest').default,
+        children: [{
+          'path': '/personal/backtest/history',
+          component: require('@/components/personal/backtest/history').default
+        },
+        {
+          'path': '/personal/backtest/assets',
+          component: require('@/components/personal/backtest/assets').default
+        },
+        {
+          'path': '/personal/backtest/analysis',
+          component: require('@/components/personal/backtest/analysis').default
+        },
+        {
+          'path': '/personal/backtest/strategy',
+          component: require('@/components/personal/backtest/strategy').default
+        }
+      ]
       }
     ]
   }
