@@ -14,17 +14,23 @@
     <mu-table :height="height" :fixedHeader=true :showCheckbox=false>
       <mu-thead>
         <mu-tr>
-          <mu-td>Account Name: {{data0}}</mu-td>
+          <mu-td>账户: {{data0}}</mu-td>
+          <mu-td>组别: {{acc['portfolio_cookie']}}</mu-td>
+          <mu-td>运行时间: {{acc['running_time']}}</mu-td>
         </mu-tr>
-
+        <!-- <mu-tr>
+          <mu-td>账户: {{data0}}</mu-td>
+          <mu-td>组别: {{acc['portfolio_cookie']}}</mu-td>
+          <mu-td>运行时间: {{acc['running_time']}}</mu-td>
+        </mu-tr> -->
         <mu-tr>
 
-          <mu-td>date</mu-td>
-          <mu-td>code</mu-td>
-          <mu-td>price</mu-td>
-          <mu-td>towards</mu-td>
-          <mu-td>amounts</mu-td>
-          <mu-td>commission</mu-td>
+          <mu-td>日期</mu-td>
+          <mu-td>品种</mu-td>
+          <mu-td>价格</mu-td>
+          <mu-td>买卖数量</mu-td>
+          <mu-td>手续费</mu-td>
+          <mu-td>方向</mu-td>
         </mu-tr>
       </mu-thead>
       <template v-for="item in items">
@@ -34,8 +40,8 @@
             <mu-td>{{item[1]}}</mu-td>
             <mu-td>{{item[2]}}</mu-td>
             <mu-td>{{item[3]}}</mu-td>
-            <mu-td>{{item[4]}}</mu-td>
-            <mu-td>{{item[7]}}</mu-td>
+            <mu-td>{{item[9]}}</mu-td>
+            <mu-td>{{item[11]}}</mu-td>
 
           </mu-tr>
         </mu-tbody>
@@ -56,7 +62,7 @@ export default {
       message: this.$route.params.id,
       items: [['2018-08-01', 'RBL8', '4288', '多开', '100', 'xx', 'xxx', '50'],
         ['2018-08-13', 'RBL8', '4250', '多平', '100', 'xx', 'xxx', '70']],
-      acc: [''],
+      acc: {},
       total: 180,
       current: 1,
       showSizeChanger: true
@@ -70,8 +76,8 @@ export default {
       console.log(val)
       axios.get('http://localhost:8010/accounts?account_cookie=' + val)
         .then(response => {
-          this.items = response.data['result'][0]['history']
-          this.acc = response.data
+          this.acc = response.data['result'][0]
+          this.items = this.acc['history']
         })
         .catch(function (error) {
           console.log(error)
