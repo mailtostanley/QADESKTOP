@@ -26,7 +26,7 @@
                 <mu-th>策略</mu-th>
                 <mu-th>开始</mu-th>
                 <mu-th>结束</mu-th>
-                <mu-th>年化</mu-th>
+                <mu-th>市场</mu-th>
               </mu-tr>
             </mu-thead>
             <template v-for="item in items">
@@ -34,9 +34,9 @@
                     <mu-tr>
                         <mu-td><router-link :to="{ name:'assets',params: {id:item['account_cookie']}}">{{ item['portfolio_cookie']}}</router-link></mu-td>
                         <mu-td><router-link :to="{ name:'assets',params: {id:item['account_cookie']}}">{{ item['account_cookie']}}</router-link></mu-td>
-                        <mu-td>{{ item['start_time']}}</mu-td>
-                        <mu-td>{{ item['end_time']}}</mu-td>
-                        <mu-td>{{ item['annualized_returns']}}</mu-td>
+                        <mu-td>{{ item['start_date']}}</mu-td>
+                        <mu-td>{{ item['end_date']}}</mu-td>
+                        <mu-td>{{ item['market_type']}}</mu-td>
 
                     </mu-tr>
                 </mu-tbody>
@@ -57,6 +57,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   data () {
     return {
@@ -70,24 +71,24 @@ export default {
         'start_time': '2017-12-01',
         'end_time': '2018-09-15',
         'annualized_returns': '35%'
-      }, {
-        'user_cookie': 'admin',
-        'portfolio_cookie': 'macd_test',
-        'account_cookie': 'macd_x',
-        'strategy': 'test_strategy',
-        'start_time': '2017-12-01',
-        'end_time': '2018-09-15',
-        'annualized_returns': '35%'
-      }, {
-        'user_cookie': 'admin',
-        'portfolio_cookie': 'macd_test',
-        'account_cookie': 'macd_x',
-        'strategy': 'test_strategy',
-        'start_time': '2017-12-01',
-        'end_time': '2018-09-15',
-        'annualized_returns': '35%'
       }]
     }
+  },
+  methods: {
+    get_strategymember () {
+      axios.get('http://localhost:8010/accounts/all')
+        .then(response => {
+          this.items = response.data['result']
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+    }
+  },
+  mounted () {
+    this.$nextTick(function () {
+      this.get_strategymember()
+    })
   }
 }
 </script>
