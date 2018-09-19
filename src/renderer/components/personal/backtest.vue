@@ -32,8 +32,8 @@
             <template v-for="item in items">
                 <mu-tbody>
                     <mu-tr>
-                        <mu-td><router-link :to="{ name:'history',params: {id:item['account_cookie']}}">{{ item['portfolio_cookie']}}</router-link></mu-td>
-                        <mu-td><router-link :to="{ name:'history',params: {id:item['account_cookie']}}">{{ item['account_cookie']}}</router-link></mu-td>
+                        <mu-td><router-link :to="{ name:'assets',params: {id:item['account_cookie']}}">{{ item['portfolio_cookie']}}</router-link></mu-td>
+                        <mu-td><router-link :to="{ name:'assets',params: {id:item['account_cookie']}}">{{ item['account_cookie']}}</router-link></mu-td>
                         <mu-td>{{ item['start_time']}}</mu-td>
                         <mu-td>{{ item['end_time']}}</mu-td>
                         <mu-td>{{ item['annualized_returns']}}</mu-td>

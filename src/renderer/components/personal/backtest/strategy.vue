@@ -3,13 +3,13 @@
       <h1>{{this.title}}</h1>
       <div class='container'>
 
-      <router-link v-bind:to="{name:'history',params: {id:this.data0}}">
+      <router-link v-bind:to="{name:'history',id:this.data0}">
         <mu-raised-button label='成交明细' class='demo-raised-button' primary/>
       </router-link>
-      <router-link v-bind:to="{ name:'assets',params: {id:this.data0}}">
+      <router-link v-bind:to="{ name:'assets',id:this.data0}">
           <mu-raised-button label='账户表现' class='demo-raised-button' secondary/>
       </router-link>
-      <router-link v-bind:to="{name:'strategy',params: {id:this.data0}}">
+      <router-link v-bind:to="{name:'strategy',id:this.data0}">
         <mu-raised-button label='策略查看' class='demo-raised-button' />
       </router-link>
 
