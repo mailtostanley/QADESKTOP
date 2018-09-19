@@ -349,10 +349,10 @@ a {
   background-color: #e6e6e6;
 }
 .mu-raised-button-primary {
-  background-color: #7e848c;
+  background-color: #ff5252;
 }
 .mu-raised-button-secondary {
-  background-color: #ff5252;
+  background-color: rgb(25,25,25);
 }
 .mu-refresh-control {
   color: #ff5252;
@@ -455,7 +455,8 @@ a {
   background-color: #e0e0e0;
 }
 .mu-table {
-  background-color: #ffffff;
+  background-color: rgb(52,52,52);
+  color: white;
 }
 .mu-thead {
   border-bottom-color: #edeff2;

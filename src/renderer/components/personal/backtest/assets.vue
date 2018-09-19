@@ -7,9 +7,9 @@
     <div class='container'>
 
       <router-link :to="{name:'history',id:this.data0}">
-        <mu-raised-button label='成交明细' class='demo-raised-button' primary/>
+        <mu-raised-button label='成交明细' class='demo-raised-button'/>
       </router-link>
-      <mu-raised-button v-on:click='ready()' label='账户表现' class='demo-raised-button' secondary/>
+      <mu-raised-button v-on:click='ready()' label='账户表现' class='demo-raised-button'  primary/>
       <router-link :to="{name:'strategy',id:this.data0}">
         <mu-raised-button label='策略查看' class='demo-raised-button' />
       </router-link>
