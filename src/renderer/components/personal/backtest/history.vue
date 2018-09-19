@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <mu-raised-button v-on:click='query()' label="成交明细" class="demo-raised-button" primary />
-      <router-link :to="{ name:'visual',params: {id:this.message}}">
+      <router-link :to="{ name:'assets',params: {id:this.message}}">
         <mu-raised-button label="账户表现" class="demo-raised-button" secondary/>
       </router-link>
       

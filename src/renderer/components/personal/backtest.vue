@@ -22,11 +22,11 @@
 
             <mu-thead  slot="header">
               <mu-tr>
-                <mu-th>group</mu-th>
-                <mu-th>strategy</mu-th>
-                <mu-th>start</mu-th>
-                <mu-th>end</mu-th>
-                <mu-th>annualized_returns</mu-th>
+                <mu-th>组别</mu-th>
+                <mu-th>策略</mu-th>
+                <mu-th>开始</mu-th>
+                <mu-th>结束</mu-th>
+                <mu-th>年化</mu-th>
               </mu-tr>
             </mu-thead>
             <template v-for="item in items">
