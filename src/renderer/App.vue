@@ -113,7 +113,7 @@ body, html {
 .mu-flat-button-wrapper {
   font-size: 1.8em;
 }
-
+  
 .mu-item-content {
   font-size: 18px;
   text-align: middle;

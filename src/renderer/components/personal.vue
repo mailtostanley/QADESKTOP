@@ -31,7 +31,7 @@
 <style lang='css'>
   #personal {
     position: relative;
-    width: 1600px;
+    width: 2800px;
     height: 1000px;
     display: block;
   }
@@ -48,6 +48,13 @@
   .mu-item-content {
     font-size: 18px;
     text-align: middle;
+  }
+
+  #view {
+    position: relative;
+    width: 1800px;
+    height: 1000px;
+    display: block;
   }
 
 </style>

@@ -15,7 +15,7 @@
 
         </mu-list>
       </div>
-      <div id='views' style='float:right'>
+      <div id='views' style='float:left'>
         <router-view>
         </router-view>
       </div>
@@ -88,14 +88,14 @@ body{
 }
   
 #view {
-  width: 1300px;
+  width: 1800px;
   height: 1000px;
   float: left;
 }
 
 
 #views{
-    width:1100px;
+    width:1200px;
     height: 1000px;
 
     position: relative;
