@@ -1,16 +1,16 @@
 <template>
-  <div style="text-align:left">
+  <div style='text-align:left'>
       <h1>{{this.title}}</h1>
-      <div class="container">
+      <div class='container'>
 
-      <router-link :to="{name:'history',params: {id:this.data0}}">
-        <mu-raised-button label="成交明细" class="demo-raised-button" primary/>
+      <router-link v-bind:to="{name:'history',params: {id:this.data0}}">
+        <mu-raised-button label='成交明细' class='demo-raised-button' primary/>
       </router-link>
-      <router-link :to="{ name:'visual',params: {id:this.data0}}">
-          <mu-raised-button label="账户表现" class="demo-raised-button" secondary/>
+      <router-link v-bind:to="{ name:'assets',params: {id:this.data0}}">
+          <mu-raised-button label='账户表现' class='demo-raised-button' secondary/>
       </router-link>
-      <router-link :to="{name:'strategy',params: {id:this.data0}}">
-        <mu-raised-button label="策略查看" class="demo-raised-button" />
+      <router-link v-bind:to="{name:'strategy',params: {id:this.data0}}">
+        <mu-raised-button label='策略查看' class='demo-raised-button' />
       </router-link>
 
       <mu-divider />
@@ -22,17 +22,14 @@
       </div>
 
 
-      <MonacoEditor
-      height="600"
-      text-align='left'
-      theme='vs'
-      language="python"
-      :code="code"
-      :editorOptions="options"
-      @mounted="onMounted"
-      @codeChange="onCodeChange"
-      >{{this.code}}
-  </MonacoEditor>
+  <monaco-editor
+    class="editor"
+    v-model="code"
+    theme='vs-dark'
+    language="python">
+
+    {{this.code}}
+  </monaco-editor>
   </div>
 </template>
 
@@ -40,96 +37,74 @@
 
 
 
+
 <script>
-  import MonacoEditor from 'vue-monaco-editor'
-  import axios from 'axios'
-  import markdownEditor from 'vue-simplemde/src/markdown-editor'
-
-
-  // 基础用法
-  export default {
-    components: {
-      MonacoEditor
-    },
-    data() {
-      return {
-        code: '//QUANTAXIS CODE EDITOR! \n ## 按F5刷新页面',
-        theme:'vs',
-        title:'',
-        version:'',
-        topic:'',
-        data0: this.$route.params.id,
-        last_modified_time:'',
-        options: {
-
-          selectOnLineNumbers:true,
-          roundedSelection: false,
-          readOnly: true,
-          cursorStyle: 'line',
-          automaticLayout: false,
-          glyphMargin: true,
-          theme:'vs'
-        },
-
+import axios from 'axios'
+import MonacoEditor from 'vue-monaco'
+export default {
+  components: {
+    MonacoEditor
+  },
+  data () {
+    return {
+      code: 'abc',
+      last_modified_time: 'none'
+    }
+  },
+  methods: {
+    ready (id) {
+      axios.get('http://localhost:8010/strategy/content?account_cookie=' + id)
+        .then(response => {
+          var res = response.data['result'][0]
+          this.title = res['name']
+          this.code = res['content']
+          this.version = res['version']
+          this.last_modified_time = res['last_modify_time']
+        })
+    }
+  },
+  mounted () {
+    this.$nextTick(function () {
+      this.ready(this.$route.params.id)
+    })
+  },
+  watch: {
+    topPopup (val) {
+      if (val) {
+        setTimeout(() => {
+          this.topPopup = false
+        }, 800)
       }
-    },
-    methods: {
-
-      onMounted(editor) {
-        this.editor = editor;
-      },
-      onCodeChange(editor) {
-        console.log(editor.getValue());
-
-      },
-      ready(id) {
-        axios.get('http://localhost:3000/backtest/strategy?cookie=' + id)
-          .then(response => {
-
-            this.title = response.data[0]['name']
-            this.code = response.data[0]['content']
-            this.version= response.data[0]['version']
-            this.topic= response.data[0]['topic']
-            this.last_modified_time= response.data[0]['datetime']
-            console.log(response.data)
-          })
-
-
-      },
-
-
-    },
-
-
-    mounted() {
-      this.$nextTick(function () {
-        this.ready(this.$route.params.id);
-
-
-      })
-    },
-    watch: {
-      topPopup(val) {
-        if (val) {
-          setTimeout(() => {
-            this.topPopup = false
-          }, 800)
-        }
-      }
-      }
-
-
+    }
   }
-
+}
 </script>
 
 <style>
+.editor {
+  width: 1000px;
+  height: 800px;
+}
 
-    .monaco-editor vs{
-      text-align:left;
-    }
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-  }
+.monaco-editor vs {
+  text-align: left;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.margin-view-overlays{
+  width: 40px;
+  background-color: rgb(34, 34, 34);
+}
+
+.view-lines{
+  
+  background-color: rgb(52, 52, 52);
+}
+
+.current-line{
+
+  background-color: rgb(114, 114, 114);
+}
 </style>
